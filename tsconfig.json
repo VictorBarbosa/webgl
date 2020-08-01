@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./scripts",
+    "watch": true,
+     "target": "ES6",
+    "importHelpers": true,
+    
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  }
+ 
+}
