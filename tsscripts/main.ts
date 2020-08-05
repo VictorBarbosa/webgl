@@ -31,7 +31,27 @@ window.onload = () => {
 
 
     //// Translations
-    let ex8 = new ex.Ex8();
-    ex8.sample();
+    // let ex8 = new ex.Ex8();
+    // ex8.sample();
+
+    //// Rotation 
+    // let ex9 = new ex.Ex9();
+    // ex9.sample();
+
+    //  // Translations  and Rotation
+    // let ex10 = new ex.Ex10();
+    // ex10.sample();
+
+    //  Translations  and Rotation
+    // let ex11 = new ex.Ex11();
+    // ex11.sample();
+
+
+    // Translations  and Rotation with Matrix4
+    let ex12 = new ex.Ex12();
+    ex12.sample();
+
+
+
 }
 

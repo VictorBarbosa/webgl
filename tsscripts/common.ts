@@ -42,8 +42,9 @@ export class Commun {
         const color = gl.getUniformLocation(program, 'color');
         gl.uniform4fv(color, new Float32Array([1.0, 0.0, 0.0, 1.0]));
     }
-    static drawScene(gl: WebGLRenderingContext){
-        gl.drawArrays(gl.POINTS,0,1);
+    static drawScene(gl: WebGLRenderingContext) {
+        gl.drawArrays(gl.POINTS, 0, 1);
     }
+
 
 }

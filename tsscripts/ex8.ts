@@ -36,9 +36,8 @@ export class Ex8 extends CanvasInitializator {
         this.gl.drawArrays(this.gl.TRIANGLES, 0, this.triangleLen);
     }
     sample() {
-        const body = document.getElementsByTagName('body')[0] as HTMLBodyElement;
-        const div = document.createElement('div') as HTMLDivElement;
-        body.append(div);
+ 
+        const div = this.insertOnBody();
         this.translationXEvent(div);
         this.translationYEvent(div);
         this.translationWEvent(div);
@@ -81,12 +80,7 @@ export class Ex8 extends CanvasInitializator {
 
     drawTriangle(program): number {
         //1
-        // let vertices = new Float32Array([
-        //     -0.5, 0.5,
-        //     -0.5, -0.5,
-        //     0.5, 0.5,
-        //     0.5, -0.5,
-
+  
 
 
         // ]);
