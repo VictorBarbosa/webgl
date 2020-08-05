@@ -10,5 +10,6 @@ export { Ex9 } from './ex9.js';
 export { Ex10 } from './ex10.js';
 export { Ex11 } from './ex11.js';
 export { Ex12 } from './ex12.js';
+export { Ex13 } from './ex13.js';
 
 

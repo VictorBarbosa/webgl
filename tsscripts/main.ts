@@ -48,8 +48,12 @@ window.onload = () => {
 
 
     // Translations  and Rotation with Matrix4
-    let ex12 = new ex.Ex12();
-    ex12.sample();
+    // let ex12 = new ex.Ex12();
+    // ex12.sample();
+
+    // Translations  and Rotation with Matrix4
+    let ex13 = new ex.Ex13();
+    ex13.sample();
 
 
 
