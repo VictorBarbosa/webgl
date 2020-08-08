@@ -11,5 +11,11 @@ export { Ex10 } from './ex10.js';
 export { Ex11 } from './ex11.js';
 export { Ex12 } from './ex12.js';
 export { Ex13 } from './ex13.js';
+export { Ex14 } from './ex14.js';
+export { Ex15 } from './ex15.js';
+
+
+
+export { ToDelete } from './delete.js';
 
 

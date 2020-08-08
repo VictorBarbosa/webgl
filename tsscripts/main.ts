@@ -51,11 +51,20 @@ window.onload = () => {
     // let ex12 = new ex.Ex12();
     // ex12.sample();
 
-    // Translations  and Rotation with Matrix4
-    let ex13 = new ex.Ex13();
-    ex13.sample();
+    // // Creating muiltiple points 
+    // let ex13 = new ex.Ex13();
+    // ex13.sample();
 
+    
+    // let ex14 = new ex.Ex14();
+    // ex14.sample();
 
+    // let ex15 = new ex.Ex15();
+    // ex15.sample();
+    
+    let ex15 = new ex.ToDelete();
+    ex15.sample();
+    
 
 }
 
