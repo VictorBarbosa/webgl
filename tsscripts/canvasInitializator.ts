@@ -1,3 +1,4 @@
+
 declare const Matrix4;
 
 class ElementRanger {
@@ -28,11 +29,17 @@ class ElementRanger {
     }
 }
 export class CanvasInitializator {
+    vertexSource: string = null;
+    fragmentSource: string = null;
     canvas: HTMLCanvasElement = document.getElementById('can') as HTMLCanvasElement;
     gl: WebGLRenderingContext = this.canvas.getContext("webgl");
     Matrix4 = Matrix4;
     program: WebGLProgram;
 
+    async getFileShader(exName: string) {
+        this.vertexSource = await (await fetch(`shaders/${exName}/vertexSource.glsl`)).text()
+        this.fragmentSource = await (await fetch(`shaders/${exName}/fragmentSource.glsl`)).text()
+    }
     rangerY(div: HTMLDivElement, changeCallback: Function) {
         const element = new ElementRanger(div, '-1.0', '1.0', '0.1', '0.0', 'Axis  Y');
         element.ranger.onchange = (ev: any) => {
@@ -79,4 +86,20 @@ export class CanvasInitializator {
         body.append(div);
         return div;
     }
+    compileShader(shader: WebGLShader, type) {
+        this.gl.compileShader(shader);
+        if (!this.gl.getShaderParameter(shader, this.gl.COMPILE_STATUS)) {
+            alert(`Error ${type}`);
+        }
+    }
+
+    draw(mode: number, first: number, count: number) {
+        this.gl.clearColor(0, 0, 0, .5);
+        this.gl.clear(this.gl.COLOR_BUFFER_BIT);
+
+
+        this.gl.drawArrays(mode, first, count);
+    }
+
+
 }
