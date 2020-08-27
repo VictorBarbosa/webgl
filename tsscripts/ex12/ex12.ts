@@ -1,6 +1,6 @@
 import { CanvasInitializator } from '../canvasInitializator.js';
 
- 
+
 export class Ex12 extends CanvasInitializator {
 
     /**
@@ -21,14 +21,14 @@ export class Ex12 extends CanvasInitializator {
         this.program = this.gl.createProgram();
 
         const vertexShader = this.gl.createShader(this.gl.VERTEX_SHADER);
-        this.gl.shaderSource(vertexShader, this. vertexSource)
+        this.gl.shaderSource(vertexShader, this.vertexSource)
         this.gl.compileShader(vertexShader);
         if (!this.gl.getShaderParameter(vertexShader, this.gl.COMPILE_STATUS)) {
             alert('Error : {Vertext}');
         }
 
         const fragmentShader = this.gl.createShader(this.gl.FRAGMENT_SHADER);
-        this.gl.shaderSource(fragmentShader, this. fragmentSource)
+        this.gl.shaderSource(fragmentShader, this.fragmentSource)
         this.gl.compileShader(fragmentShader);
         if (!this.gl.getShaderParameter(fragmentShader, this.gl.COMPILE_STATUS)) {
             alert('Error : {Fragment}');
@@ -64,9 +64,9 @@ export class Ex12 extends CanvasInitializator {
             var xformMatrix = new this.Matrix4();
 
             let newAngle = ang + (45.0 * elapsed) / 1000.0;
-            newAngle =     newAngle %= 360;
+            newAngle = newAngle %= 360;
 
-          
+
             xformMatrix.setRotate(newAngle, 0, 0, 1);
             xformMatrix.translate(0.36, 0, 0.0);
 

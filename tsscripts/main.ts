@@ -10,8 +10,8 @@ window.onload = async () => {
   // ex2.sample( );
 
 
-  //    let ex3 = new ex.Ex3( );
-  //     ex3.sample( );
+  // let ex3 = new ex.Ex3( );
+  // ex3.sample( );
 
 
   // let ex4 = new ex.Ex4("ex4");
@@ -58,10 +58,12 @@ window.onload = async () => {
   // let ex14 = new ex.Ex14("ex14");
 
 
-  let ex15 = new ex.Ex15("ex15");
+  // let ex15 = new ex.Ex15("ex15");
 
-
- 
+  //// 3 Trinangle with moviment
+  // let ex16 = new ex.Ex16("ex16");
+  //Tringle with square
+  let ex17 = new ex.Ex17("ex17");
 
 }
 

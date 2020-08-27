@@ -26,7 +26,7 @@ export class Ex11 extends CanvasInitializator {
         this.program = this.gl.createProgram();
 
         
-        this.Matrix4
+       
 
         let vertexShader = this.gl.createShader(this.gl.VERTEX_SHADER);
         this.gl.shaderSource(vertexShader, this.  vertexSource);

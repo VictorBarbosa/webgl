@@ -13,6 +13,8 @@ export { Ex12 } from './ex12/ex12.js';
 export { Ex13 } from './ex13/ex13.js';
 export { Ex14 } from './ex14/ex14.js';
 export { Ex15 } from './ex15/ex15.js';
+export { Ex16 } from './ex16/ex16.js';
+export { Ex17 } from './ex17/ex17.js';
 
 
 export { ToDelete } from './delete.js';

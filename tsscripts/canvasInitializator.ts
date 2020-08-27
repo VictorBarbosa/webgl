@@ -1,4 +1,5 @@
-
+ 
+import { MatrixWebGl } from '../node_modules/matrixwebgl/src/index.js';
 declare const Matrix4;
 
 class ElementRanger {
@@ -33,7 +34,7 @@ export class CanvasInitializator {
     fragmentSource: string = null;
     canvas: HTMLCanvasElement = document.getElementById('can') as HTMLCanvasElement;
     gl: WebGLRenderingContext = this.canvas.getContext("webgl");
-    Matrix4 = Matrix4;
+    Matrix4 =  MatrixWebGl;
     program: WebGLProgram;
 
     async getFileShader(exName: string) {
@@ -58,6 +59,22 @@ export class CanvasInitializator {
     }
     rangerZ(div: HTMLDivElement, changeCallback: Function) {
         const element = new ElementRanger(div, '-1.0', '1.0', '0.1', '0.0', 'Axis  Z');
+        element.ranger.onchange = (ev: any) => {
+            element.labelCurrent.innerHTML = " Current - " + element.ranger.value;
+            changeCallback(ev)
+        };
+
+    }
+    near(div: HTMLDivElement, changeCallback: Function) {
+        const element = new ElementRanger(div, '-10.0', '10.0', '0.1', '0.0', 'Near');
+        element.ranger.onchange = (ev: any) => {
+            element.labelCurrent.innerHTML = " Current - " + element.ranger.value;
+            changeCallback(ev)
+        };
+
+    }
+    far(div: HTMLDivElement, changeCallback: Function) {
+        const element = new ElementRanger(div, '-10.0', '10.0', '0.1', '0.0', 'Far');
         element.ranger.onchange = (ev: any) => {
             element.labelCurrent.innerHTML = " Current - " + element.ranger.value;
             changeCallback(ev)
