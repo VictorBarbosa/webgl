@@ -1,6 +1,6 @@
- 
+
 import { MatrixWebGl } from '../node_modules/matrixwebgl/src/index.js';
-declare const Matrix4;
+ 
 
 class ElementRanger {
     ranger: HTMLInputElement;
@@ -24,8 +24,6 @@ class ElementRanger {
         divContent.appendChild(label);
         divContent.appendChild(this.labelCurrent);
         divContent.appendChild(this.ranger);
-        var chanc = this.ranger.onchange
-
 
     }
 }
@@ -34,7 +32,7 @@ export class CanvasInitializator {
     fragmentSource: string = null;
     canvas: HTMLCanvasElement = document.getElementById('can') as HTMLCanvasElement;
     gl: WebGLRenderingContext = this.canvas.getContext("webgl");
-    Matrix4 =  MatrixWebGl;
+    Matrix4 = MatrixWebGl;
     program: WebGLProgram;
 
     async getFileShader(exName: string) {

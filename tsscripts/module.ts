@@ -15,6 +15,8 @@ export { Ex14 } from './ex14/ex14.js';
 export { Ex15 } from './ex15/ex15.js';
 export { Ex16 } from './ex16/ex16.js';
 export { Ex17 } from './ex17/ex17.js';
+export { Ex18 } from './ex18/ex18.js';
+export { Ex19 } from './ex19/ex19.js';
 
 
 export { ToDelete } from './delete.js';

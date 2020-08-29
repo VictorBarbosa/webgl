@@ -63,7 +63,18 @@ window.onload = async () => {
   //// 3 Trinangle with moviment
   // let ex16 = new ex.Ex16("ex16");
   //Tringle with square
-  let ex17 = new ex.Ex17("ex17");
+  // let ex17 = new ex.Ex17("ex17");
+
+
+
+
+  // let ex18 = new ex.Ex18("ex18");
+
+
+  //Desenho de um cubo 
+  let ex19 = new ex.Ex19("ex19");
+
+
 
 }
 
